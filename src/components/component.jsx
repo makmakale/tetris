@@ -7,6 +7,7 @@ import { StyledTetrisBoard } from '@/styles/TetrisBoard';
 import { Wrapper } from '@/styles/Wrapper';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
+import bgImg from '../../public/images/bg.jpg';
 
 function GameComponent({
   player, stage, dropTime, updateStage, setStage,
@@ -22,7 +23,7 @@ function GameComponent({
   }, [player]);
 
   return (
-    <Wrapper role="button" tabIndex="0" onKeyDown={move} onKeyUp={onKeyUp}>
+    <Wrapper role="button" tabIndex="0" onKeyDown={move} onKeyUp={onKeyUp} bgImgUrl={bgImg}>
       <StyledTetrisBoard>
         <Header />
         <GameScreen />

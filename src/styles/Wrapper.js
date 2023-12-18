@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/images/bg.jpg') no-repeat;
+    background: url(${(props) => props.bgImgUrl}) no-repeat;
     background-size: cover;
   }
 `;
