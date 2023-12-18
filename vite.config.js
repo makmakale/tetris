@@ -21,6 +21,11 @@ export default defineConfig(({ command }) => {
       extensions: ['.js', '.jsx'],
     },
     publicDir: 'public',
+    build: {
+      assetsDir: '',
+      copyPublicDir: true,
+      emptyOutDir: true,
+    },
   };
 
   if (command !== 'serve') {
