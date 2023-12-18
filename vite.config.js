@@ -20,9 +20,7 @@ export default defineConfig(({ command }) => {
       },
       extensions: ['.js', '.jsx'],
     },
-    build: {
-      outDir: 'public',
-    },
+    publicDir: 'public',
   };
 
   if (command !== 'serve') {
