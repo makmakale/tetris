@@ -1,0 +1,12 @@
+export const getTetrisIsOn = (state) => state.isOn;
+export const getIsPlaying = (state) => state.isPlaying;
+export const getIsPaused = (state) => state.isPaused;
+export const getStage = (state) => state.stage;
+export const getFirstLunch = (state) => state.firstLunch;
+export const getUpcomingBlock = (state) => state.upcomingBlock;
+export const getScore = (state) => state.score;
+export const getHiScore = (state) => state.hiScore;
+export const getLevel = (state) => state.level;
+export const getPlayer = (state) => state.player;
+export const getClearedRows = (state) => state.rowsCleared;
+export const getGameOver = (state) => state.isGameOver;
